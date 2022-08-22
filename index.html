@@ -8,9 +8,268 @@
 
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                mySpringWood: '#fbf7ed',
+                myDarkTeal: '#004c3f',
+                myDarkGreen: '#008060',
+              },
+              fontFamily: {
+                roboto: "'Roboto', sans-serif",
+              },
+              fontSize: {
+                'my-17': '17px',
+                'my-heading': '40px',
+                'my-14': '14px',
+                'my-16': '16px',
+                'my-18': '18px',
+                'my-20': '20px',
+                'my-24': '24px',
+                'my-30': '30px',
+                'my-32': '32px',
+                'my-40': '40px',
+                },
+            },
+          }
+        }
+    </script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+
+    <!-- font awesme kit -->
+    <script src="https://kit.fontawesome.com/6b7d2ba9e0.js" crossorigin="anonymous"></script>
+
+    <!-- flowbyte -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+
+    <style>
+        .br-red-2{
+            border: 2px red solid;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="text-center text-4xl mt-8">shopify Clone</h1>
-    <img class="mx-auto w-[200px] mt-6" src="https://yt3.ggpht.com/yNcA1kJlSL5iu_8ZyQcgi4lLNM0cj5k5P6zu_PozWQGNUMVDXTg98KsraxkfDYPTGi7Q1m8iNcw=s900-c-k-c0x00ffffff-no-rj" alt="" srcset="">
+    <!-- header section -->
+    <header>
+        <div class="container max-w-[1600px] h-[80px] mx-auto flex flex-row justify-between items-center px-5 md:px-[94px] bg-mySpringWood">
+            <!-- left part of header -->
+            <div class="flex flex-row justify-between items-center gap-10">
+                <img class="w-[100px]" src="images/Shopify-Logo.png" alt="">
+                <nav>
+                    <ul class="hidden md:flex flex-row justify-between items-center gap-4">
+                        <li class="text-my-17 font-medium">Start <i class="fa-solid fa-angle-down"></i></li>
+                        <li class="text-my-17 font-medium">Sell <i class="fa-solid fa-angle-down"></i></li>
+                        <li class="text-my-17 font-medium">Maraket <i class="fa-solid fa-angle-down"></i></li>
+                        <li class="text-my-17 font-medium">Manage <i class="fa-solid fa-angle-down"></i></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- right part of header -->
+            <div class="flex flex-row justify-between items-center">
+                <nav class="hidden md:flex flex-row justify-between items-center gap-6">
+                    <ul class="flex flex-row justify-between items-center gap-4">
+                        <li class="text-my-17 font-medium">Pricing<li>
+                        <li class="text-my-17 font-medium">Learn <i class="fa-solid fa-angle-down"></i></li>
+                        <li class="text-my-17 font-medium">Log in</li>
+                    </ul>
+                    <button class="px-6 py-2 bg-myDarkGreen text-white text-[16px] font-bold hover:bg-myDarkTeal hover:shadow-xl hover:shadow-inner duration-150 rounded">Try for free</button>
+                </nav>
+                <nav class="md:hidden flex flex-row justify-between items-center gap-6">
+                  <ul class="flex flex-row justify-between items-center gap-4">
+                      <li class="text-my-18 font-medium hover:cursor-pointer">Log in</li>
+                      <li><i class="fa-solid fa-bars text-my-18 hover:cursor-pointer"></i></li>
+                  </ul>
+              </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- section 1 | hero section -->
+    <section class="text-gray-600 body-font">
+        <div class="container max-w-[1600px] px-5 md:px-[94px] mx-auto flex py-5 md:py-24 md:flex-row flex-col bg-mySpringWood br-red-2">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-left br-red-2">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">The easiest way to sell 
+              <br class="hidden lg:inline-block">online in India
+            </h1>
+            <p class="mb-8 leading-relaxed">Try one of the most powerful platforms on the market for free. No technical knowledge needed.</p>
+            <div class="flex justify-start md:justify-center">
+              <input placeholder="Enter your email address" type="email" name="" id="">
+              <button class="ml-4 px-6 py-2 bg-myDarkGreen text-white text-[16px] font-bold hover:bg-myDarkTeal hover:shadow-xl hover:shadow-inner duration-150 rounded">Try for free</button>
+            </div>
+        <p>Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.~</p>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <video width="800" height="2400" autoplay nocontrols loop>
+              <source src="videos/hero-section.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 2 | bring your bussiness online section -->
+      <section class="text-gray-600 body-font">
+        <div class="container max-w-[1600px] px-5 md:px-[94px] mx-auto py-24 bg-myDarkTeal text-white font-roboto br-red-2">
+          <!-- heading -->
+          <div class="flex flex-col md:flex-row w-full md:justify-between">
+            <!-- heading text -->
+            <div class="mt-4">
+              <h1 class="text-my-heading">Bring your business online</h1>
+              <p class="text-my-17  mt-4">Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</p>
+            </div>
+            <!-- explore more -->
+            <div class="mt-4 flex flex-row items-end">
+              <a class="text-my-17 font-bold" href="#">Explore More more Example
+                <i class="fa-solid fa-right-long "></i>                 
+              </a>
+            </div>
+          </div>
+          
+          <!-- cards -->
+          <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mt-24">
+            <!-- card 1 -->
+            <div class="flex flex-col gap-1">
+              <img src="images/s2-card1.jpg.jpg" alt="" srcset="">
+              <a class="text-my-14 font-semibold" href="#">FOOD & DRINK</a>
+              <p class="text-my-18">Blue Takoi</p>
+            </div>
+            <!-- card 2 -->
+            <div class="flex flex-col gap-1">
+              <img src="images/s2-card2.jpg" alt="" srcset="">
+              <a class="text-my-14 font-semibold" href="#">JEWELRY</a>
+              <p class="text-my-18">Quirksmith</p>
+            </div>
+            <!-- card 3 -->
+            <div class="flex flex-col gap-1">
+              <img src="images/s2-card3.jpg" alt="" srcset="">
+              <a class="text-my-14 font-semibold" href="#">ELECTRONICS</a>
+              <p class="text-my-18">Crossbeats</p>
+            </div>
+            <!-- card 4 -->
+            <div class="flex flex-col gap-1">
+              <img src="images/s2-card4.jpg" alt="" srcset="">
+              <a class="text-my-14 font-semibold" href="#">BEAUTY</a>
+              <p class="text-my-18">Mcaffeine</p>
+            </div>
+            <!-- card 5 -->
+            <div class="md:flex flex-col gap-1 hidden">
+              <img src="images/s2-card5.jpg" alt="" srcset="">
+              <a class="text-my-14 font-semibold" href="#">FASHION</a>
+              <p class="text-my-18">Blue Takoi</p>
+            </div>
+          </div>
+
+          <div class="py-12 mt-24">
+            <h1 class="text-my-30">Take the best forward</h1>
+
+            <!-- cards -->
+            <div class="grid grid-cols-1 md:grid-cols-4 mt-12">
+              <!-- card 1 -->
+              <div class="mt-12 md:mt-0">
+                <img class="w-[36px] h-[36px]" src="images/icon1.jpg" alt="" srcset="">
+                <p class="text-my-18 font-medium mt-6">Start an online business</p>
+                <p class="text-my-16 mt-2">Create a business,hether you’ve got a fresh idea or are looking for a new way to make money.</p>
+              </div>
+              <!-- card 2 -->
+              <div class="mt-12 md:mt-0">
+                <img class="w-[36px] h-[36px]" src="images/icon2.jpg" alt="" srcset="">
+                <p class="text-my-18 font-medium mt-6">SMove your business online</p>
+                <p class="text-my-16 mt-2">Turn your retail store into an online store and keep serving customers without missing a beat.</p>
+              </div>
+              <!-- card 3 -->
+              <div class="mt-12 md:mt-0">
+                <img class="w-[36px] h-[36px]" src="images/icon3.jpg" alt="" srcset="">
+                <p class="text-my-18 font-medium mt-6">Switch to Shopify</p>
+                <p class="text-my-16 mt-2">Bring your business to Shopify, no matter which ecommerce platform you’re currently using.</p>
+              </div>
+              <!-- card 4 -->
+              <div class="mt-12 md:mt-0">
+                <img class="w-[36px] h-[36px]" src="images/icon4.jpg" alt="" srcset="">
+                <p class="text-my-18 font-medium mt-6">Hire a Shopify expert</p>
+                <p class="text-my-16 mt-2">Get set up with the help of a trusted freelancer or agency from the Shopify Experts Marketplace.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 3 | with you where ever you are going section -->
+      <section>
+        <div class="container max-w-[1220px] px-5 md:px-[94px] mx-auto py-24 bg-white text-black font-roboto br-red-2">
+          <!-- heading -->
+          <div>
+            <h1 class="text-my-40 text-center">With you wherever you’re going</h1>
+            <p class="text-my-20 mx-auto text-center max-w-[600px]">One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.</p>
+          </div>
+
+          <!-- sub-section 1 | sell everywhere -->
+          <div class="grid grid-cols-1 md:grid-cols-2 mt-20">
+            <!-- left -->
+            <div class="order-last md:order-first">
+              <video width="800" height="2400" autoplay nocontrols loop>
+                <source src="videos/video-2.webm" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
+            </div class="">
+            <!-- right -->
+            <div class="flex flex-col gap-[18px] justify-center">
+              <h2 class="text-my-24 md:text-my-30">Sell everywhere</h2>
+              <p class="text-my-16 max-w-[474px]">Use one platform to sell products to anyone, 
+                anywhere—in person with Point of Sale and online 
+                through your website, social media, and online marketplaces.
+              </p>
+              <a class="text-my-16 text-myDarkGreen font-bold" href="#">Explore ways to sell
+                <i class="fa-solid fa-right-long "></i>                 
+              </a>
+            </div>
+          </div>
+
+          <!-- sub-section 2 | market your bussiness -->
+          <div class="grid grid-cols-1 md:grid-cols-2 mt-20">
+            <!-- left -->
+            <div class="order-last">
+              <img src="images/market-your-bussiness.jpg" alt="" srcset="">
+            </div class="">
+            <!-- right -->
+            <div class="flex flex-col gap-[18px] justify-center">
+              <h2 class="text-my-24 md:text-my-30">Market your business</h2>
+              <p class="text-my-16 max-w-[474px]">
+                Take the guesswork out of marketing with built-in tools that
+                 help you create, execute, and analyze digital marketing campaigns.
+              </p>
+              <a class="text-my-16 text-myDarkGreen font-bold" href="#">Explore how to manage your business
+                <i class="fa-solid fa-right-long "></i>                 
+              </a>
+            </div>
+          </div>
+
+          <!-- sub-section 3 | manage everything -->
+          <div class="grid grid-cols-1 md:grid-cols-2 mt-20 gap-6">
+            <!-- left -->
+            <div class="order-last md:order-first md:p-10">
+              <img src="images/manage-everything.png" alt="" srcset="">
+            </div class="">
+            <!-- right -->
+            <div class="flex flex-col gap-[18px] justify-center">
+              <h2 class="text-my-24 md:text-my-30">Manage everything</h2>
+              <p class="text-my-16 max-w-[474px]">
+                Gain the insights you need to grow—use a single dashboard to manage orders, 
+                shipping, and payments anywhere you go.
+              </p>
+              <a class="text-my-16 text-myDarkGreen font-bold" href="#">Explore how to manage your business
+                <i class="fa-solid fa-right-long "></i>                 
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 </body>
 </html>
