@@ -52,8 +52,34 @@
     <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
 
     <style>
-        .br-red-2{
+        .brd{
             border: 2px red solid;
+        }
+
+        .hover-animation {
+          position: relative;
+          cursor: pointer;
+        }
+
+        .hover-animation:hover::after {
+          position: absolute;
+          content: "";
+          height: 5px;
+          width: 100%;
+          background-color: white;
+          left: 0;
+          bottom: 0;
+        }
+
+        .line-h > li{
+          padding: 3px 0;
+          font-size: 14px;
+          opacity: 0.7;
+        }
+        
+        .line-h > li:hover{
+          opacity: 1;
+          cursor: default;
         }
     </style>
 </head>
@@ -96,19 +122,19 @@
 
     <!-- section 1 | hero section -->
     <section class="text-gray-600 body-font">
-        <div class="container max-w-[1600px] px-5 md:px-[94px] mx-auto flex py-5 md:py-24 md:flex-row flex-col bg-mySpringWood br-red-2">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-left br-red-2">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">The easiest way to sell 
+        <div class="container max-w-[1600px] px-5 md:px-[94px] mx-auto flex py-5 md:py-24 md:flex-row flex-col bg-mySpringWood ">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-left ">
+            <h1 class="title-font sm:text-4xl text-[48PX] mb-4 font-extrabold text-gray-900">The easiest way to sell 
               <br class="hidden lg:inline-block">online in India
             </h1>
-            <p class="mb-8 leading-relaxed">Try one of the most powerful platforms on the market for free. No technical knowledge needed.</p>
+            <p class="mb-8 leading-relaxed text-my-20 opacity-90">Try one of the most powerful platforms on the market for free. No technical knowledge needed.</p>
             <div class="flex justify-start md:justify-center">
               <input placeholder="Enter your email address" type="email" name="" id="">
               <button class="ml-4 px-6 py-2 bg-myDarkGreen text-white text-[16px] font-bold hover:bg-myDarkTeal hover:shadow-xl hover:shadow-inner duration-150 rounded">Try for free</button>
             </div>
-        <p>Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.~</p>
+            <p class="opacity-90 text-[12px]">Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
             <video width="800" height="2400" autoplay nocontrols loop>
               <source src="videos/hero-section.webm" type="video/webm">
               Your browser does not support the video tag.
@@ -119,7 +145,7 @@
 
       <!-- section 2 | bring your bussiness online section -->
       <section class="text-gray-600 body-font">
-        <div class="container max-w-[1600px] px-5 md:px-[94px] mx-auto py-24 bg-myDarkTeal text-white font-roboto br-red-2">
+        <div class="container max-w-[1600px] px-5 md:px-[94px] mx-auto py-24 bg-myDarkTeal text-white font-roboto ">
           <!-- heading -->
           <div class="flex flex-col md:flex-row w-full md:justify-between">
             <!-- heading text -->
@@ -205,7 +231,7 @@
 
       <!-- section 3 | with you where ever you are going section -->
       <section>
-        <div class="container max-w-[1220px] px-5 md:px-[94px] mx-auto py-24 bg-white text-black font-roboto br-red-2">
+        <div class="container max-w-[1220px] px-5 md:px-[94px] mx-auto py-24 bg-white text-black font-roboto ">
           <!-- heading -->
           <div>
             <h1 class="text-my-40 text-center">With you wherever you’re going</h1>
@@ -319,7 +345,7 @@
       <!-- section 6 | Shopify was my knight -->
       <section>
         <div class="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 p-5 md:p-0 md:px-[100px]">
-          <div class="br-red-2 br-red-2 w-full h-full">
+          <div class="  w-full h-full">
             <img class="object-cover object-center w-full h-full" src="images/section-7.jpg" alt="" srcset="">
           </div>
           <div class="bg-myDarkTeal2 text-center flex flex-col justify-center items-center py-16">
@@ -331,25 +357,25 @@
 
         <!-- company list -->
         <div class="max-w-[1600px] mx-auto px-5 md:px-[100px] flex flex-row flex-wrap justify-between items-center pb-12 gap-4">
-          <div class="br-red-2">
+          <div class="">
             <img class="mt-8" class="mt-12 w-full" src="images/BAJAAO.png" alt="" srcset="">
           </div>
-          <div class="br-red-2">
+          <div class="">
            <img class="mt-8" src="images/JOHN JACOBS.png" alt="" srcset="">
           </div>
-          <div class="br-red-2">
+          <div class="">
             <img class="mt-8" src="images/KYLIE.png" alt="" srcset="">
           </div>
-          <div class="br-red-2">
+          <div class="">
             <img class="mt-8" src="images/NUSH.png" alt="" srcset="">
           </div>
-          <div class="br-red-2">
+          <div class="">
             <img class="mt-8" src="images/YOGA BAR.png" alt="" srcset="">
           </div>
-          <div class="br-red-2">
+          <div class="">
             <img class="mt-8" src="images/STAR STRUCK.png" alt="" srcset="">
           </div>
-          <div class="br-red-2 mx-auto md:mx-0">
+          <div class=" mx-auto md:mx-0">
             <img class="mt-8" src="images/M COFFENE.png" alt="" srcset="">
           </div>
         </div>
@@ -392,7 +418,143 @@
             <img class="object-cover object-center h-full w-full" src="images/person_using_laptop.jpg" alt="" srcset="">
           </div>
         </div>
+
+        <div class="max-w-[1600px] p-[100px] mx-auto">
+          <div class="max-w-[800px] px-12 mx-auto flex flex-col justify-center items-center gap-4">
+            <h1 class="text-my-30 text-center">Start your business journey with Shopify</h1>  
+            <p class="text-my-18 text-center">Try Shopify for free, and explore all the tools and services you need to start, run, and grow your business.</p>
+            <button class="px-6 py-2 bg-myDarkGreen text-white text-[16px] font-bold hover:bg-myDarkTeal hover:shadow-xl hover:shadow-inner duration-150 rounded">Start free trial</button>
+          </div>
+          <div class="w-full my-12">
+            <a class="text-my-18 text-myDarkGreen font-bold float-right" href="#">Contact support
+              <i class="fa-solid fa-up-long"></i>               
+            </a>
+          </div>
+        </div>
       </section>
+
+      <footer>
+        <div class="max-w-[1600px] mx-auto  bg-myDarkTeal2 text-white">
+          <div class="px-[100px] mx-auto ">
+            <div>
+              <ul class="flex flex-row  mt-5">
+                <li class="text-my-16 font-bold mr-5 pb-5 hover-animation">About</li>
+                <li class="text-my-16 font-bold mx-5 pb-5 hover-animation">Career</li>
+                <li class="text-my-16 font-bold mx-5 pb-5 hover-animation">Press and Media</li>
+                <li class="text-my-16 font-bold mx-5 pb-5 hover-animation">Sitemap</li>
+                <li class="text-my-16 font-bold mx-5 pb-5 hover-animation">Shopify Plus</li>
+              </ul>
+            </div>
+
+            <!-- menu -->
+            <div class="grid grid-cols-2 mt-12">
+              <!-- menu col left -->
+              <div>
+                <p class="font-extrabold text-my-14 mb-2">ONLINE STORE</p>
+                <div  class="grid grid-cols-3">
+                  <div>
+                  <!-- menu-1-1 -->
+                  <ul class="line-h">
+                    <li>Sell online</li>
+                    <li>Features</li>
+                    <li>Examples</li>
+                    <li>Website builder</li>
+                    <li>Online retail</li>
+                  </ul>
+                </div>
+                <div>
+                  <!-- menu-1-2 -->
+                  <ul class="line-h">
+                    <li>Ecommerce website</li>
+                    <li>Domain name</li>
+                    <li>Themes</li>
+                    <li>Shopping cart</li>
+                    <li>Ecommerce hosting</li>
+                  </ul>
+                </div>
+                <div>
+                  <!-- menu-1-3 -->
+                  <ul class="line-h">
+                    <li>Mobile commerce</li>
+                    <li>Ecommerce software</li>
+                    <li>Online store builder</li>
+                    <li>Dropshipping Bussiness</li>
+                    <li>Store themes</li>
+                  </ul>
+                </div>
+                </div>
+
+              </div>
+              <!-- menu col right -->
+              <div class="grid grid-cols-3">
+                <!-- menu-2 -->
+                <div>
+                  <p class="font-extrabold text-my-14 mb-2">POINT OF SALE</p>
+                  <ul class="line-h">
+                    <li>Point of sale</li>
+                    <li>Feature</li>
+                  </ul>
+                </div>
+                <!-- menu-3 -->
+                <div>
+                  <p class="font-extrabold text-my-14 mb-2">SUPPORT</p>
+                  <ul class="line-h">
+                    <li>24/7 support</li>
+                    <li>Shopify Help Center</li>
+                    <li>API documentation</li>
+                    <li>Free tools</li>
+                    <li>Free stock photos</li>
+                    <li>Website for sale</li>
+                    <li>Logo Maker</li>
+                    <li>Bussiness name generator</li>
+                    <li>Research</li>
+                    <li>Legal</li>
+                  </ul>
+                </div>
+                <!-- menu-4 -->
+                <div>
+                  <p class="font-extrabold text-my-14 mb-2">SHOPIFY</p>
+                  <ul class="line-h">
+                    <li>Contact</li>
+                    <li>Partner program</li>
+                    <li>Affiliate program</li>
+                    <li>App developers</li>
+                    <li>Investors</li>
+                    <li>Blog topics</li>
+                    <li>Community Events</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer buttom -->
+        <div class="bg-myDarkTeal2 text-white max-w-[1600px] px-[100px] py-[30px] mx-auto flex flex-row justify-between items-center">
+          <!-- social menu -->
+          <div class="flex flex-row justify-between gap-4 text-my-24">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+          <!-- t&c privacy policy  -->
+          <div class="flex flex-row justify-between gap-4">
+            <ul class="flex flex-row justify-between gap-4">
+              <li>Terms of Service</li>
+              <li>Privacy Policy</li>
+            </ul>
+            <div class="flex flex-row justify-between items-center gap-1">
+              <i class="fa-solid fa-globe"></i>
+              <p>india</p>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+
       
 </body>
 </html>
